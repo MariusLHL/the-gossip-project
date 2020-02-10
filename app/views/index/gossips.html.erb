@@ -2,7 +2,7 @@
   <div class="card-body">
     <h5 class="card-title"><%= @gossip.title %></h5>
     <p class="card-text"><%= @gossip.content %></p>
-    <a class="card-text" href="/user/<%= @author.id - User.last.id %>">
+    <a class="card-text" href="/user/<%= @link%>">
     <%= @author.first_name %>
     <%= @author.last_name %>
     </a>
