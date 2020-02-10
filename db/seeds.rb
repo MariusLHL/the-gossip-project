@@ -22,7 +22,7 @@ end
 end
 
 20.times do
-  Gossip.create(title: Faker::Lorem.word, content: Faker::Lorem.paragraph(sentence_count: 2), user_id: Faker::Number.within(range: User.first.id..User.last.id))
+  Gossip.create(title: Faker::Lorem.word, content: Faker::Lorem.paragraph, user_id: Faker::Number.within(range: User.first.id..User.last.id))
 end
 
 5.times do
