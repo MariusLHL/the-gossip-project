@@ -1,0 +1,26 @@
+<h1 class = "text-center"><%= @profile.first_name %> <%= @profile.last_name %></h2>
+<h3 class ="text-center">City :<%= @city.name %></h3>
+<h4 class ="text-center">email: <%= @profile.email %></h4>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Titre</th>
+      <th scope="col">Contenu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @gossip.each do |t |%>
+    <tr>
+      <th scope="row">1</th>
+      <td><%=t.title%></td>
+      <td><%= t.content %></td>
+    </tr>      
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+

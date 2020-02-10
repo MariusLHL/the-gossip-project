@@ -1,0 +1,13 @@
+<div class="card" style="width: 60rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= @gossip.title %></h5>
+    <p class="card-text"><%= @gossip.content %></p>
+    <a class="card-text" href="/user/<%= @author.id - User.last.id %>">
+    <%= @author.first_name %>
+    <%= @author.last_name %>
+    </a>
+    <% @tag.each do |y|%>
+    <span class="badge badge-primary"> <%= y.title%></span>
+      <%end%>
+  </div>
+</div>
